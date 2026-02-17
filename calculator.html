@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    div {
+      margin: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    table{
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-family: "Times New Roman",sans-serif;
+    }
+    th{
+      background-color: #f2a900;
+      color: white; padding: 12px;
+      border: 2px solid #333;
+    }
+    td{
+      padding: 10px;
+      border: 2px solid #333;
+      text-align: center;
+    }
+  </style>
+  <title>Calculator</title>
+  <meta name = "author" content="Caleb Milliken">
+</head>
+<body>
+<div>
+  <h4>Enter 2 Numbers and Select an Operator to Perform a Calculation</h4>
+</div>
+<div>
+  <form name = "calc" id = "calc">
+      Number 1: <br>
+    <input type="number" id="num1" placeholder="Enter Number 1"><br><br>
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+      </select><br><br>
+      Number 2: <br>
+    <input type="number" id="num2" placeholder="Enter Number 2">
+  </form>
+</div>
+<div>
+  <button onclick="cancel()">CANCEL</button>
+  <button onclick="calculate()">OK</button>
+</div>
+<div>
+  <table id="result"></table>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
